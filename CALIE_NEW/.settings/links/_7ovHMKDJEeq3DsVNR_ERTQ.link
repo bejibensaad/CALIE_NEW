@@ -1,0 +1,29 @@
+{
+  "itemId" : "_7ovHMKDJEeq3DsVNR_ERTQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_nrUhoKr9EequWIUYTAkqNA",
+    "parameterList" : [ {
+      "id" : "_9jAFQr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Login"
+    }, {
+      "id" : "_9jAFQ701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Database"
+    }, {
+      "id" : "_9jAFRL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_AdditionalParams"
+    }, {
+      "id" : "_9jAFRb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Schema"
+    }, {
+      "id" : "_9jAFRr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Server"
+    }, {
+      "id" : "_9jAFR701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Port"
+    }, {
+      "id" : "_9jAFSL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Password"
+    } ]
+  } ]
+}

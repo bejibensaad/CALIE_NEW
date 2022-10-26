@@ -1,0 +1,29 @@
+{
+  "itemId" : "_JLCr4KV7EeqNuJ-O7ppGWQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_WnMvAKV7EeqNuJ-O7ppGWQ",
+    "parameterList" : [ {
+      "id" : "_9kf6Er01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Login"
+    }, {
+      "id" : "_9kf6E701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Port"
+    }, {
+      "id" : "_9kf6FL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Schema"
+    }, {
+      "id" : "_9kf6Fb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Database"
+    }, {
+      "id" : "_9kf6Fr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Password"
+    }, {
+      "id" : "_9kf6F701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Server"
+    }, {
+      "id" : "_9kf6GL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_AdditionalParams"
+    } ]
+  } ]
+}

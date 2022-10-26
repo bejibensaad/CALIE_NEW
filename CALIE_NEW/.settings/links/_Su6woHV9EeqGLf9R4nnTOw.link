@@ -1,0 +1,29 @@
+{
+  "itemId" : "_Su6woHV9EeqGLf9R4nnTOw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_hQsNoHWhEeqGLf9R4nnTOw",
+    "parameterList" : [ {
+      "id" : "_9kR3ob01Eeqw6dGOGVrE3Q",
+      "name" : "Target_BDD_Port"
+    }, {
+      "id" : "_9kR3or01Eeqw6dGOGVrE3Q",
+      "name" : "Target_BDD_Password"
+    }, {
+      "id" : "_9kR3o701Eeqw6dGOGVrE3Q",
+      "name" : "Target_BDD_Login"
+    }, {
+      "id" : "_9kR3pL01Eeqw6dGOGVrE3Q",
+      "name" : "Target_BDD_Database"
+    }, {
+      "id" : "_9kR3pb01Eeqw6dGOGVrE3Q",
+      "name" : "Target_BDD_Server"
+    }, {
+      "id" : "_9kR3pr01Eeqw6dGOGVrE3Q",
+      "name" : "Target_BDD_AdditionalParams"
+    }, {
+      "id" : "_9kR3p701Eeqw6dGOGVrE3Q",
+      "name" : "Target_BDD_Schema"
+    } ]
+  } ]
+}

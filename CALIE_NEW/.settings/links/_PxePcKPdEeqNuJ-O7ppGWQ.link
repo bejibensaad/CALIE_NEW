@@ -1,0 +1,174 @@
+{
+  "itemId" : "_PxePcKPdEeqNuJ-O7ppGWQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_WnMvAKV7EeqNuJ-O7ppGWQ",
+    "parameterList" : [ {
+      "id" : "_9kf6GL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_AdditionalParams"
+    }, {
+      "id" : "_9kf6Fb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Database"
+    }, {
+      "id" : "_9kf6Er01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Login"
+    }, {
+      "id" : "_9kf6Fr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Password"
+    }, {
+      "id" : "_9kf6E701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Port"
+    }, {
+      "id" : "_9kf6FL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Schema"
+    }, {
+      "id" : "_9kf6F701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_SMOYgKV7EeqNuJ-O7ppGWQ",
+    "parameterList" : [ {
+      "id" : "_9kmAt701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_AdditionalParams"
+    }, {
+      "id" : "_9kmAtL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Database"
+    }, {
+      "id" : "_9kmAsb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Login"
+    }, {
+      "id" : "_9kmAtb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Password"
+    }, {
+      "id" : "_9kmAsr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Port"
+    }, {
+      "id" : "_9kmAs701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Schema"
+    }, {
+      "id" : "_9kmAtr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_QiXAAKsTEeqdlLhC3_T1qQ",
+    "parameterList" : [ {
+      "id" : "_9kwYwr01Eeqw6dGOGVrE3Q",
+      "name" : "File_Contextes"
+    }, {
+      "id" : "_9kwYwb01Eeqw6dGOGVrE3Q",
+      "name" : "Path_Config"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_nrUhoKr9EequWIUYTAkqNA",
+    "parameterList" : [ {
+      "id" : "_9jAFRr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Server"
+    }, {
+      "id" : "_9jAFQ701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Database"
+    }, {
+      "id" : "_9jAFR701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Port"
+    }, {
+      "id" : "_9jAFSL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Password"
+    }, {
+      "id" : "_9jAFQr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Login"
+    }, {
+      "id" : "_9jAFRL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_AdditionalParams"
+    }, {
+      "id" : "_9jAFRb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Schema"
+    } ]
+  }, {
+    "contextName" : "ACC",
+    "repoId" : "_WnMvAKV7EeqNuJ-O7ppGWQ",
+    "parameterList" : [ {
+      "id" : "_9kf6GL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_AdditionalParams"
+    }, {
+      "id" : "_9kf6Fb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Database"
+    }, {
+      "id" : "_9kf6Er01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Login"
+    }, {
+      "id" : "_9kf6Fr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Password"
+    }, {
+      "id" : "_9kf6E701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Port"
+    }, {
+      "id" : "_9kf6FL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Schema"
+    }, {
+      "id" : "_9kf6F701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_CPRD_Server"
+    } ]
+  }, {
+    "contextName" : "ACC",
+    "repoId" : "_SMOYgKV7EeqNuJ-O7ppGWQ",
+    "parameterList" : [ {
+      "id" : "_9kmAt701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_AdditionalParams"
+    }, {
+      "id" : "_9kmAtL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Database"
+    }, {
+      "id" : "_9kmAsb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Login"
+    }, {
+      "id" : "_9kmAtb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Password"
+    }, {
+      "id" : "_9kmAsr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Port"
+    }, {
+      "id" : "_9kmAs701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Schema"
+    }, {
+      "id" : "_9kmAtr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_MSSQL_ODS_Server"
+    } ]
+  }, {
+    "contextName" : "ACC",
+    "repoId" : "_QiXAAKsTEeqdlLhC3_T1qQ",
+    "parameterList" : [ {
+      "id" : "_9kwYwr01Eeqw6dGOGVrE3Q",
+      "name" : "File_Contextes"
+    }, {
+      "id" : "_9kwYwb01Eeqw6dGOGVrE3Q",
+      "name" : "Path_Config"
+    } ]
+  }, {
+    "contextName" : "ACC",
+    "repoId" : "_nrUhoKr9EequWIUYTAkqNA",
+    "parameterList" : [ {
+      "id" : "_IMNNYez-Eeqk8qhCLwmcrg",
+      "name" : "BDD_AMC_Login"
+    }, {
+      "id" : "_IMNNYuz-Eeqk8qhCLwmcrg",
+      "name" : "BDD_AMC_Database"
+    }, {
+      "id" : "_IMNNY-z-Eeqk8qhCLwmcrg",
+      "name" : "BDD_AMC_AdditionalParams"
+    }, {
+      "id" : "_IMNNZOz-Eeqk8qhCLwmcrg",
+      "name" : "BDD_AMC_Schema"
+    }, {
+      "id" : "_IMNNZez-Eeqk8qhCLwmcrg",
+      "name" : "BDD_AMC_Server"
+    }, {
+      "id" : "_IMNNZuz-Eeqk8qhCLwmcrg",
+      "name" : "BDD_AMC_Port"
+    }, {
+      "id" : "_IMNNZ-z-Eeqk8qhCLwmcrg",
+      "name" : "BDD_AMC_Password"
+    } ]
+  } ]
+}

@@ -1,0 +1,1909 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="BDD_DWH_AdditionalParams" prompt="BDD_DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="_xYe_8Kr8EequWIUYTAkqNA" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_DWH_Database" prompt="BDD_DWH_Database?" promptNeeded="false" repositoryContextId="_xYe_8Kr8EequWIUYTAkqNA" type="id_String" value="DWH"/>
+    <contextParameter comment="" name="BDD_DWH_Login" prompt="BDD_DWH_Login?" promptNeeded="false" repositoryContextId="_xYe_8Kr8EequWIUYTAkqNA" type="id_String" value="SQLUser_T_DW_DBMgmt"/>
+    <contextParameter comment="" name="BDD_DWH_Password" prompt="BDD_DWH_Password?" promptNeeded="false" repositoryContextId="_xYe_8Kr8EequWIUYTAkqNA" type="id_Password" value="enc:system.encryption.key.v1:c0QkKl1/HusBQtmwpWCBXh2aXM4vUB4Nkfd+ESSdGdx7YrJoQ1FZphgO"/>
+    <contextParameter comment="" name="BDD_DWH_Port" prompt="BDD_DWH_Port?" promptNeeded="false" repositoryContextId="_xYe_8Kr8EequWIUYTAkqNA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="BDD_DWH_Schema" prompt="BDD_DWH_Schema?" promptNeeded="false" repositoryContextId="_xYe_8Kr8EequWIUYTAkqNA" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_DWH_Server" prompt="BDD_DWH_Server?" promptNeeded="false" repositoryContextId="_xYe_8Kr8EequWIUYTAkqNA" type="id_String" value="cali-t-dw-sql01.calie.lux.pbk"/>
+    <contextParameter comment="" name="BDD_DWH_SharedName" prompt="BDD_DWH_SharedName?" promptNeeded="false" repositoryContextId="_xYe_8Kr8EequWIUYTAkqNA" type="id_String" value="DWH_SharedName"/>
+    <contextParameter comment="" name="BDD_ODS_AdditionalParams" prompt="BDD_ODS_AdditionalParams?" promptNeeded="false" repositoryContextId="_n1ezUKZUEeqjJYrLnR_VOg" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_ODS_Database" prompt="BDD_ODS_Database?" promptNeeded="false" repositoryContextId="_n1ezUKZUEeqjJYrLnR_VOg" type="id_String" value="ODS"/>
+    <contextParameter comment="" name="BDD_ODS_Login" prompt="BDD_ODS_Login?" promptNeeded="false" repositoryContextId="_n1ezUKZUEeqjJYrLnR_VOg" type="id_String" value="SQLUser_T_DW_DBMgmt"/>
+    <contextParameter comment="" name="BDD_ODS_Password" prompt="BDD_ODS_Password?" promptNeeded="false" repositoryContextId="_n1ezUKZUEeqjJYrLnR_VOg" type="id_Password" value="enc:system.encryption.key.v1:PDwqAgbBj1uEirVVtoVU6n0ysnmGGvePkQQmQ2DYAkS9SufOVb5gWY8j"/>
+    <contextParameter comment="" name="BDD_ODS_Port" prompt="BDD_ODS_Port?" promptNeeded="false" repositoryContextId="_n1ezUKZUEeqjJYrLnR_VOg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="BDD_ODS_Schema" prompt="BDD_ODS_Schema?" promptNeeded="false" repositoryContextId="_n1ezUKZUEeqjJYrLnR_VOg" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_ODS_Server" prompt="BDD_ODS_Server?" promptNeeded="false" repositoryContextId="_n1ezUKZUEeqjJYrLnR_VOg" type="id_String" value="cali-t-dw-sql01.calie.lux.pbk"/>
+    <contextParameter comment="" name="BDD_ODS_SharedName" prompt="BDD_ODS_SharedName?" promptNeeded="false" repositoryContextId="_n1ezUKZUEeqjJYrLnR_VOg" type="id_String" value="ODS_SharedName"/>
+    <contextParameter comment="" name="DATLIMPERIODE" prompt="DATLIMPERIODE?" promptNeeded="false" repositoryContextId="_HK3OMGzjEeqbNMFDxhb_RQ" type="id_String" value="1900-01-01"/>
+    <contextParameter comment="" name="DATTRT" prompt="DATTRT?" promptNeeded="false" repositoryContextId="_HK3OMGzjEeqbNMFDxhb_RQ" type="id_String" value="2020-06-30"/>
+    <contextParameter comment="" name="FichierContexte" prompt="FichierContexte?" promptNeeded="false" repositoryContextId="_HK3OMGzjEeqbNMFDxhb_RQ" type="id_String" value="E:\Talend_FileStore\conf\CALIE_context.csv"/>
+    <contextParameter comment="" name="RepReject" prompt="RepReject?" promptNeeded="false" repositoryContextId="_HK3OMGzjEeqbNMFDxhb_RQ" type="id_Directory" value="E:\Talend_FileStore\data\reject\"/>
+    <contextParameter comment="" name="RepSource" prompt="RepSource?" promptNeeded="false" repositoryContextId="_HK3OMGzjEeqbNMFDxhb_RQ" type="id_Directory" value="E:\Talend_FileStore\data\in\"/>
+    <contextParameter comment="" name="RepTemp" prompt="RepTemp?" promptNeeded="false" repositoryContextId="_HK3OMGzjEeqbNMFDxhb_RQ" type="id_String" value="E:\Talend_FileStore\data\tmp\"/>
+    <contextParameter comment="" name="BDD_AMC_Server" prompt="BDD_AMC_Server?" promptNeeded="false" repositoryContextId="_nrUhoKr9EequWIUYTAkqNA" type="id_String" value="cali-t-dw-sql01.calie.lux.pbk"/>
+    <contextParameter comment="" name="BDD_AMC_Database" prompt="BDD_AMC_Database?" promptNeeded="false" repositoryContextId="_nrUhoKr9EequWIUYTAkqNA" type="id_String" value="AMC"/>
+    <contextParameter comment="" name="BDD_AMC_Port" prompt="BDD_AMC_Port?" promptNeeded="false" repositoryContextId="_nrUhoKr9EequWIUYTAkqNA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="BDD_AMC_Password" prompt="BDD_AMC_Password?" promptNeeded="false" repositoryContextId="_nrUhoKr9EequWIUYTAkqNA" type="id_Password" value="enc:system.encryption.key.v1:ofcmRG3lTqYMOvI10AQxJK013QHSgohJFDilgy/IrBcK3o9TK+h2V9uI"/>
+    <contextParameter comment="" name="BDD_AMC_Login" prompt="BDD_AMC_Login?" promptNeeded="false" repositoryContextId="_nrUhoKr9EequWIUYTAkqNA" type="id_String" value="SQLUser_T_DW_DBMgmt"/>
+    <contextParameter comment="" name="BDD_AMC_AdditionalParams" prompt="BDD_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_nrUhoKr9EequWIUYTAkqNA" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_AMC_Schema" prompt="BDD_AMC_Schema?" promptNeeded="false" repositoryContextId="_nrUhoKr9EequWIUYTAkqNA" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="2112"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="768"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:V8koZCEbVPwedGofW6h4TaFwbnehZpKot5OPD1dR"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Talend-Studio/studio/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" show="false" value="_7ovHMKDJEeq3DsVNR_ERTQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMSSqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="JTDS"/>
+    <elementParameter field="TEXT" name="URL" show="false" value=""/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.BDD_AMC_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.BDD_AMC_Port"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.BDD_AMC_Database"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.BDD_AMC_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.BDD_AMC_AdditionalParams"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.BDD_AMC_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.BDD_AMC_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZN/jx3ZD0/UvlgQemG/e4OeLYvn2Ogn6ar0wslIqrraFDNPXvcCAN7iniozAkIGJ8tI9QQ=="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;flowmeter&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_xCIZUIoqEeqHgtWEzWxj5g" name="DQTechnical"/>
+    <routinesParameter id="_vkvOQIoqEeqHgtWEzWxj5g" name="DataMasking"/>
+    <routinesParameter id="_xDaLsIoqEeqHgtWEzWxj5g" name="DataOperation"/>
+    <routinesParameter id="_xBguQIoqEeqHgtWEzWxj5g" name="DataQualityDependencies"/>
+    <routinesParameter id="_xBFQcIoqEeqHgtWEzWxj5g" name="DataQuality"/>
+    <routinesParameter id="_xBzpMIoqEeqHgtWEzWxj5g" name="DqStringHandling"/>
+    <routinesParameter id="_xCuPMIoqEeqHgtWEzWxj5g" name="MDM"/>
+    <routinesParameter id="_xFgdcIoqEeqHgtWEzWxj5g" name="Mathematical"/>
+    <routinesParameter id="_xHwgMIoqEeqHgtWEzWxj5g" name="Numeric"/>
+    <routinesParameter id="_xJ-GsIoqEeqHgtWEzWxj5g" name="Relational"/>
+    <routinesParameter id="_xDAjEIoqEeqHgtWEzWxj5g" name="SQLike"/>
+    <routinesParameter id="_xMhEYIoqEeqHgtWEzWxj5g" name="StringHandling"/>
+    <routinesParameter id="_xOs1sIoqEeqHgtWEzWxj5g" name="TalendDataGenerator"/>
+    <routinesParameter id="_xPanYIoqEeqHgtWEzWxj5g" name="TalendDate"/>
+    <routinesParameter id="_xQ5OEIoqEeqHgtWEzWxj5g" name="TalendStringUtil"/>
+    <routinesParameter id="_xQOfsIoqEeqHgtWEzWxj5g" name="TalendString"/>
+    <routinesParameter id="_vDP5oJwkEeqqyuXOmFfffA" name="ImplicitContextUtils"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="-320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Pre-job&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="-320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Démarage du job : &quot;+jobName"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Demarrage du job&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="-320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_M_hrgJ5nEeq7rfGu8SgD0w"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.BDD_ODS_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.BDD_ODS_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.BDD_ODS_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.BDD_ODS_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.BDD_ODS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HAA0LOZDHdOp+55kfBhpPd69VMITfVbE7W8R5/IHEGLdor499YsrXEBKaSwCc4JIVEnMfA=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.BDD_ODS_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="context.BDD_ODS_SharedName"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Ouverture connection ODS&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="-160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;La connexion a échoué&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Erreur dans la connection à la DB&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-384" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.MSSQL_DB_ODS_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.MSSQL_DB_ODS_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.MSSQL_DB_ODS_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.MSSQL_DB_ODS_Database"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.MSSQL_DB_ODS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fG9bCVzP0O02wCWJy2FA/eyMkD1N/GJ5FjlzAXRPwC3lhi0shQKiecqORmDVnM+IYBaYpeG2dj+h"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;S2_Product_network_bank_account_FR&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; SELECT &quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_FR.BI_ID&#13;&#10;      ,CONCAT(333,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_FR.\&quot;ID\&quot;) AS \&quot;ID\&quot; &#13;&#10;      ,CONCAT(333,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_FR.PRODUCT_NETWORD_BANK_ID) AS PRODUCT_NETWORD_BANK_ID &#13;&#10;      ,CASE WHEN PORTFOLIO_DEATH_ID IS NULL THEN NULL ELSE CONCAT(333,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_FR.PORTFOLIO_DEATH_ID) END AS PORTFOLIO_DEATH_ID&#13;&#10;      ,CASE WHEN PORTFOLIO_USD_ID IS NULL THEN NULL ELSE CONCAT(333,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_FR.PORTFOLIO_USD_ID) END AS PORTFOLIO_USD_ID&#13;&#10;      ,CASE WHEN PORTFOLIO_EUR_ID IS NULL THEN NULL ELSE CONCAT(333,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_FR.PORTFOLIO_EUR_ID) END AS PORTFOLIO_EUR_ID&#13;&#10;      ,CASE WHEN PORTFOLIO_EUR_BRUT_ID IS NULL THEN NULL ELSE CONCAT(333,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_FR.PORTFOLIO_EUR_BRUT_ID) END AS PORTFOLIO_EUR_BRUT_ID&#13;&#10;      ,CASE WHEN PORTFOLIO_EUR_DYN_ID IS NULL THEN NULL ELSE CONCAT(333,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_FR.PORTFOLIO_EUR_DYN_ID) END AS PORTFOLIO_EUR_DYN_ID&#13;&#10;      ,CASE WHEN PORTFOLIO_UC_ID IS NULL THEN NULL ELSE CONCAT(333,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_FR.PORTFOLIO_UC_ID) END AS PORTFOLIO_UC_ID&#13;&#10;      ,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_FR.CURRENCY_TX&#13;&#10;  FROM &quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_FR&#13;&#10; &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.MSSQL_DB_ODS_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="BI_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_NETWORD_BANK_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_DEATH_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_USD_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_EUR_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_EUR_BRUT_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_EUR_DYN_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_UC_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENCY_TX"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" defaultValue="" key="false" length="10" name="BI_ID" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ID" nullable="false" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PRODUCT_NETWORD_BANK_ID" nullable="false" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_DEATH_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_USD_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_EUR_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_EUR_BRUT_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_EUR_DYN_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_UC_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CURRENCY_TX" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-416" posY="1216">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.MSSQL_DB_ODS_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.MSSQL_DB_ODS_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.MSSQL_DB_ODS_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.MSSQL_DB_ODS_Database"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.MSSQL_DB_ODS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0AgDLeFE0UO96sHLkgKcljXt/NN1Xpkwvuw4XIrt1h71FN1qXo6A0jEF+QFsxtORhf7M/+DGNdeh"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;S2_Product_network_bank_account_LU&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; SELECT &quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_LU.BI_ID&#13;&#10;      ,CONCAT(352,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_LU.\&quot;ID\&quot;) AS \&quot;ID\&quot;&#13;&#10;      ,CONCAT(352,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_LU.PRODUCT_NETWORD_BANK_ID) AS PRODUCT_NETWORD_BANK_ID&#13;&#10;      ,CASE WHEN PORTFOLIO_DEATH_ID IS NULL THEN NULL ELSE CONCAT(352,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_LU.PORTFOLIO_DEATH_ID) END AS PORTFOLIO_DEATH_ID&#13;&#10;      ,CASE WHEN PORTFOLIO_USD_ID IS NULL THEN NULL ELSE CONCAT(352,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_LU.PORTFOLIO_USD_ID) END AS PORTFOLIO_USD_ID&#13;&#10;      ,CASE WHEN PORTFOLIO_EUR_ID IS NULL THEN NULL ELSE CONCAT(352,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_LU.PORTFOLIO_EUR_ID) END AS PORTFOLIO_EUR_ID&#13;&#10;      ,CASE WHEN PORTFOLIO_EUR_BRUT_ID IS NULL THEN NULL ELSE CONCAT(352,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_LU.PORTFOLIO_EUR_BRUT_ID) END AS PORTFOLIO_EUR_BRUT_ID&#13;&#10;      ,CASE WHEN PORTFOLIO_EUR_DYN_ID IS NULL THEN NULL ELSE CONCAT(352,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_LU.PORTFOLIO_EUR_DYN_ID) END AS PORTFOLIO_EUR_DYN_ID&#13;&#10;      ,CASE WHEN PORTFOLIO_UC_ID IS NULL THEN NULL ELSE CONCAT(352,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_LU.PORTFOLIO_UC_ID) END AS PORTFOLIO_UC_ID&#13;&#10;      ,&quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_LU.CURRENCY_TX&#13;&#10;  FROM &quot;+context.BDD_ODS_Schema+&quot;.S2_Product_network_bank_account_LU&#10; &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.MSSQL_DB_ODS_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="BI_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_NETWORD_BANK_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_DEATH_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_USD_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_EUR_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_EUR_BRUT_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_EUR_DYN_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PORTFOLIO_UC_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENCY_TX"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" defaultValue="" key="false" length="10" name="BI_ID" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ID" nullable="false" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PRODUCT_NETWORD_BANK_ID" nullable="false" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_DEATH_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_USD_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_EUR_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_EUR_BRUT_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_EUR_DYN_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_UC_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CURRENCY_TX" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tUnite_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="Union"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUnite_1">
+      <column comment="" defaultValue="" key="false" length="10" name="BI_ID" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ID" nullable="false" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PRODUCT_NETWORD_BANK_ID" nullable="false" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_DEATH_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_USD_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_EUR_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_EUR_BRUT_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_EUR_DYN_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PORTFOLIO_UC_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CURRENCY_TX" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_igbo8LxHEeq34tenjnilrQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MapData"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="S2_Product_network_bank_account">
+      <column comment="" key="false" length="-1" name="LISTE_PRTOFOLIO_NOTNULL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ID" nullable="false" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PRODUCT_NETWORD_BANK_ID" nullable="false" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_DEATH_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_USD_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_BRUT_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_DYN_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_UC_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY_TX" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="CALS_REJET" name="Out_Rejets_Qualite">
+      <column comment="" key="false" length="1073741823" name="COMMENTAIRE" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_FLUX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DATE_REJET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_ENR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_ODS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="TYPE_REJET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="!Relational.ISNULL(SRC_ODS.PORTFOLIO_DEATH_ID)   || &#13;&#10;!Relational.ISNULL(SRC_ODS.PORTFOLIO_USD_ID)  ||&#13;&#10;!Relational.ISNULL(SRC_ODS.PORTFOLIO_EUR_ID)  ||&#13;&#10;!Relational.ISNULL(SRC_ODS.PORTFOLIO_EUR_BRUT_ID)  ||&#13;&#10;!Relational.ISNULL(SRC_ODS.PORTFOLIO_EUR_DYN_ID)   || &#13;&#10;!Relational.ISNULL(SRC_ODS.PORTFOLIO_UC_ID) " name="Ligne_NotNull_ok" type="id_Boolean"/>
+        <mapperTableEntries expression="!Var.Ligne_NotNull_ok ? (&#13;&#10;&#13;&#10;(Relational.ISNULL(SRC_ODS.PORTFOLIO_DEATH_ID)? &quot;PORTFOLIO_DEATH_ID est  : &quot;&#13;&#10;+SRC_ODS.PORTFOLIO_DEATH_ID +&quot;  &amp;&amp;  &quot; : &quot;&quot; ) &#13;&#10;&#13;&#10;+(Relational.ISNULL(SRC_ODS.PORTFOLIO_USD_ID)? &quot;PORTFOLIO_USD_ID est  : &quot;&#13;&#10;+SRC_ODS.PORTFOLIO_USD_ID + &quot;  &amp;&amp;  &quot; : &quot;&quot; ) &#13;&#10;&#13;&#10;+(Relational.ISNULL(SRC_ODS.PORTFOLIO_EUR_ID)? &quot;SPORTFOLIO_EUR_ID est &quot;&#13;&#10;+SRC_ODS.PORTFOLIO_EUR_ID +&quot;  &amp;&amp;  &quot; : &quot;&quot; )  &#13;&#10;&#13;&#10;+(Relational.ISNULL(SRC_ODS.PORTFOLIO_EUR_BRUT_ID)? &quot;PORTFOLIO_EUR_BRUT_ID est  : &quot;&#13;&#10;+SRC_ODS.PORTFOLIO_EUR_BRUT_ID +&quot;  &amp;&amp;  &quot; : &quot;&quot; ) &#13;&#10;&#13;&#10;+(Relational.ISNULL(SRC_ODS.PORTFOLIO_EUR_DYN_ID)? &quot;PORTFOLIO_EUR_DYN_ID est  : &quot;&#13;&#10;+SRC_ODS.PORTFOLIO_EUR_DYN_ID +&quot;  &amp;&amp;  &quot; : &quot;&quot; ) &#13;&#10;&#13;&#10;+(Relational.ISNULL(SRC_ODS.PORTFOLIO_UC_ID)? &quot;PORTFOLIO_UC_ID est :&quot; +SRC_ODS.PORTFOLIO_UC_ID  : &quot;&quot; ) &#13;&#10;&#13;&#10;&#13;&#10;) : &quot;&quot; " name="Commentaire" type="id_String"/>
+        <mapperTableEntries expression="Var.Ligne_NotNull_ok ? (&#13;&#10;&#13;&#10;(!Relational.ISNULL(SRC_ODS.PORTFOLIO_DEATH_ID)? &quot;DEATH :&quot;&#13;&#10;+SRC_ODS.PORTFOLIO_DEATH_ID +&quot;;&quot; : &quot;&quot; ) &#13;&#10;&#13;&#10;+(!Relational.ISNULL(SRC_ODS.PORTFOLIO_USD_ID)? &quot;USD :&quot;&#13;&#10;+SRC_ODS.PORTFOLIO_USD_ID +&quot;;&quot; : &quot;&quot; ) &#13;&#10;&#13;&#10; &#13;&#10; +(!Relational.ISNULL(SRC_ODS.PORTFOLIO_EUR_ID)? &quot;EUR :&quot;&#13;&#10;+SRC_ODS.PORTFOLIO_EUR_ID +&quot;;&quot; : &quot;&quot; )  &#13;&#10;&#13;&#10;+(!Relational.ISNULL(SRC_ODS.PORTFOLIO_EUR_BRUT_ID)? &quot;EUR BRUT :&quot;&#13;&#10;+SRC_ODS.PORTFOLIO_EUR_BRUT_ID +&quot;;&quot; : &quot;&quot; ) &#13;&#10;&#13;&#10;+(!Relational.ISNULL(SRC_ODS.PORTFOLIO_EUR_DYN_ID)? &quot;EUR DYN :&quot;&#13;&#10;+SRC_ODS.PORTFOLIO_EUR_DYN_ID +&quot;;&quot; : &quot;&quot; ) &#13;&#10;&#13;&#10;+(!Relational.ISNULL(SRC_ODS.PORTFOLIO_UC_ID)? &quot;UC :&quot; +SRC_ODS.PORTFOLIO_UC_ID +&quot;;&quot; : &quot;&quot; ) &#13;&#10;&#13;&#10;&#13;&#10;) : &quot;&quot; " name="Liste_portofolio" type="id_String"/>
+        <mapperTableEntries expression="&quot;333&quot;.equals(StringHandling.LEFT(String.valueOf(  SRC_ODS.ID ), 3)) " name="isFromFR" type="id_Boolean"/>
+      </varTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="Var.Ligne_NotNull_ok " name="S2_Product_network_bank_account" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="StringHandling.LEFT(Var.Liste_portofolio  , Var.Liste_portofolio.lastIndexOf(&quot;;&quot;) ) " name="LISTE_PRTOFOLIO_NOTNULL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="SRC_ODS.ID " name="ID" type="id_Long"/>
+        <mapperTableEntries expression="SRC_ODS.PRODUCT_NETWORD_BANK_ID " name="PRODUCT_NETWORD_BANK_ID" type="id_Long"/>
+        <mapperTableEntries expression="SRC_ODS.PORTFOLIO_DEATH_ID   " name="PORTFOLIO_DEATH_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="SRC_ODS.PORTFOLIO_USD_ID " name="PORTFOLIO_USD_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="SRC_ODS.PORTFOLIO_EUR_ID  " name="PORTFOLIO_EUR_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="SRC_ODS.PORTFOLIO_EUR_BRUT_ID  " name="PORTFOLIO_EUR_BRUT_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="SRC_ODS.PORTFOLIO_EUR_DYN_ID " name="PORTFOLIO_EUR_DYN_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="SRC_ODS.PORTFOLIO_UC_ID " name="PORTFOLIO_UC_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="SRC_ODS.CURRENCY_TX " name="CURRENCY_TX" type="id_String"/>
+      </outputTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="!Var.Ligne_NotNull_ok" name="Out_Rejets_Qualite" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Var.Commentaire" name="COMMENTAIRE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="jobName" name="ID_FLUX" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate()   " name="DATE_REJET" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="String.valueOf(  SRC_ODS.ID )" name="ID_ENR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TABLE_DIM_REF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;S2_Product_network_bank_account_&quot; + ( Var.isFromFR? &quot;FR&quot;:&quot;LU&quot;) " name="TABLE_ODS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ID_DIM_REF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;Q&quot;" name="TYPE_REJET" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="SRC_ODS" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="BI_ID" type="id_Integer"/>
+        <mapperTableEntries name="ID" type="id_Long"/>
+        <mapperTableEntries name="PRODUCT_NETWORD_BANK_ID" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_DEATH_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_USD_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_BRUT_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_DYN_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_UC_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="CURRENCY_TX" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="1312">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;bdluxdev.westeurope.cloudapp.azure.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;bd_admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:kUGkaQVDsA+fhIBBPIYW+iqnT+p6miG2K/0FvN/ZtPOzN6NHH0M55s6o+V0ivw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CALS_REJET&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="COMMENTAIRE"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMMENTAIRE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_FLUX"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_REJET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_ENR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TABLE_DIM_REF"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TABLE_ODS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_DIM_REF"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_REJET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CALS_REJET" name="tDBOutput_1">
+      <column comment="" key="false" length="1073741823" name="COMMENTAIRE" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_FLUX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DATE_REJET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_ENR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_ODS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="TYPE_REJET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="CALS_REJET" name="REJECT">
+      <column comment="" key="false" length="1073741823" name="COMMENTAIRE" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_FLUX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DATE_REJET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_ENR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_ODS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="TYPE_REJET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tNormalize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tNormalize_2"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="NORMALIZE_COLUMN" value="LISTE_PRTOFOLIO_NOTNULL"/>
+    <elementParameter field="TEXT" name="ITEMSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="DEDUPLICATE" value="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ESCAPE_CHAR" show="false" value="ESCAPE_MODE_DOUBLED"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DISCARD_TRAILING_EMPTY_STR" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="LignesNotNull"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tNormalize_2">
+      <column comment="" key="false" length="-1" name="LISTE_PRTOFOLIO_NOTNULL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ID" nullable="false" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PRODUCT_NETWORD_BANK_ID" nullable="false" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_DEATH_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_USD_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_BRUT_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_DYN_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_UC_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY_TX" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_5"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_igbo8LxHEeq34tenjnilrQ-tMap_5-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MapDATA"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="LignesOK">
+      <column comment="" key="false" length="-1" name="LISTE_PROTOFOLIO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ID" nullable="false" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PRODUCT_NETWORD_BANK_ID" nullable="false" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_DEATH_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_USD_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_BRUT_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_DYN_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_UC_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY_TX" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="LignesOK" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="LignesTransformees.LISTE_PRTOFOLIO_NOTNULL" name="LISTE_PROTOFOLIO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="LignesTransformees.ID " name="ID" type="id_Long"/>
+        <mapperTableEntries expression="LignesTransformees.PRODUCT_NETWORD_BANK_ID " name="PRODUCT_NETWORD_BANK_ID" type="id_Long"/>
+        <mapperTableEntries expression="LignesTransformees.PORTFOLIO_DEATH_ID " name="PORTFOLIO_DEATH_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesTransformees.PORTFOLIO_USD_ID " name="PORTFOLIO_USD_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesTransformees.PORTFOLIO_EUR_ID " name="PORTFOLIO_EUR_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesTransformees.PORTFOLIO_EUR_BRUT_ID " name="PORTFOLIO_EUR_BRUT_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesTransformees.PORTFOLIO_EUR_DYN_ID " name="PORTFOLIO_EUR_DYN_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesTransformees.PORTFOLIO_UC_ID " name="PORTFOLIO_UC_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesTransformees.CURRENCY_TX " name="CURRENCY_TX" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="LignesTransformees" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="LISTE_PRTOFOLIO_NOTNULL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ID" type="id_Long"/>
+        <mapperTableEntries name="PRODUCT_NETWORD_BANK_ID" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_DEATH_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_USD_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_BRUT_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_DYN_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_UC_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="CURRENCY_TX" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1856" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_8"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_igbo8LxHEeq34tenjnilrQ-tMap_8-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MapData"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="Data">
+      <column comment="" key="false" length="12" name="ID" nullable="false" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PRODUCT_NETWORD_BANK_ID" nullable="false" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_DEATH_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_USD_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_BRUT_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_EUR_DYN_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PORTFOLIO_UC_ID" nullable="true" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY_TX" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="List_protofolio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PROD_PTF_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TYPE_COMPTE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="StringHandling.INDEX(LignesOK.LISTE_PROTOFOLIO,&quot;:&quot;) " name="int_getTableDim" type="id_Integer"/>
+        <mapperTableEntries expression="StringHandling.LEN(LignesOK.LISTE_PROTOFOLIO) -  Var.int_getTableDim - 1 " name="int_getIdDim" type="id_Integer"/>
+        <mapperTableEntries expression="StringHandling.RIGHT(LignesOK.LISTE_PROTOFOLIO ,Var.int_getIdDim ) " name="idDimRefPrfx" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.LEFT(LignesOK.LISTE_PROTOFOLIO ,4) " name="prefixTable" type="id_String"/>
+        <mapperTableEntries expression="&quot;333&quot;.equals(StringHandling.LEFT(String.valueOf(LignesOK.ID), 3)) " name="isFromFR" type="id_Boolean"/>
+      </varTables>
+      <outputTables name="Data" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="LignesOK.ID " name="ID" type="id_Long"/>
+        <mapperTableEntries expression="LignesOK.PRODUCT_NETWORD_BANK_ID " name="PRODUCT_NETWORD_BANK_ID" type="id_Long"/>
+        <mapperTableEntries expression="LignesOK.PORTFOLIO_DEATH_ID " name="PORTFOLIO_DEATH_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesOK.PORTFOLIO_USD_ID " name="PORTFOLIO_USD_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesOK.PORTFOLIO_EUR_ID " name="PORTFOLIO_EUR_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesOK.PORTFOLIO_EUR_BRUT_ID " name="PORTFOLIO_EUR_BRUT_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesOK.PORTFOLIO_EUR_DYN_ID " name="PORTFOLIO_EUR_DYN_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesOK.PORTFOLIO_UC_ID " name="PORTFOLIO_UC_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="LignesOK.CURRENCY_TX " name="CURRENCY_TX" type="id_String"/>
+        <mapperTableEntries expression="LignesOK.LISTE_PROTOFOLIO" name="List_protofolio" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Long.parseLong(StringHandling.RIGHT( Var.idDimRefPrfx  ,StringHandling.LEN( Var.idDimRefPrfx ))) " name="PROD_PTF_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="StringHandling.LEFT(LignesOK.LISTE_PROTOFOLIO ,Var.int_getTableDim ) " name="TYPE_COMPTE_ID" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="LignesOK" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="LISTE_PROTOFOLIO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ID" type="id_Long"/>
+        <mapperTableEntries name="PRODUCT_NETWORD_BANK_ID" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_DEATH_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_USD_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_BRUT_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_DYN_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_UC_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="CURRENCY_TX" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2592" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_9"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_igbo8LxHEeq34tenjnilrQ-tMap_9-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MapData"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CALA_PROD_COMPTE" name="Out_CALA_PROD_COMPTE_">
+      <column comment="" key="true" length="12" name="PROD_COMPTE_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="PROD_BANQUE_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="DEVISE_ID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="12" name="PROD_PTF_ID" nullable="false" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="50" name="TYPE_COMPTE" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="REF_LIS" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="CLE_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="DATE_DEBUT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DATE_FIN" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="FLG_ISLAST" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="FLOW" name="Out_CTRL_INTEGRITE_KO">
+      <column comment="" key="false" length="-1" name="Commentaire" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIM_ERR_LIST" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="ID_ENR" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="Out_Check_Del_">
+      <column comment="" key="false" length="-1" name="TYPE_COMPTE_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PROD_COMPTE_ID_File" nullable="false" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PROD_PTF_ID_File" nullable="false" originalLength="12" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="!Relational.ISNULL(CALA_PRODUIT_BANQUE_.PROD_BANQUE_ID)  &amp;&amp;&#13;&#10; !Relational.ISNULL(CALR_DEVISE_.DEVISE_ID) &amp;&amp;&#13;&#13;&#10;!Relational.ISNULL(CALA_ROD_PTF_.PROD_PTF_ID) " name="Ligne_ok" type="id_Boolean"/>
+        <mapperTableEntries expression="!Var.Ligne_ok ? (&#13;&#10;(Relational.ISNULL(CALA_PRODUIT_BANQUE_.PROD_BANQUE_ID)? &quot;CALA_PRODUIT_BANQUE:&quot;+Data.PRODUCT_NETWORD_BANK_ID +&quot;;&quot; : &quot;&quot; ) &#13;&#10;&#13;&#10;+ (Relational.ISNULL(CALR_DEVISE_.DEVISE_ID)? &quot;CALD_DEVISE:&quot;+Data.CURRENCY_TX +&quot;;&quot; : &quot;&quot; ) &#13;&#10;&#13;&#10;+(Relational.ISNULL(CALA_ROD_PTF_.PROD_PTF_ID)? &quot;CALA_PROD_PTF:&quot;+Data.PROD_PTF_ID +&quot;;&quot; : &quot;&quot; ) &#13;&#10;&#10;&#13;&#10;) : &quot;&quot; " name="Liste_Dim_ko" type="id_String"/>
+        <mapperTableEntries expression="!Var.Ligne_ok ? (&#13;&#10;&#13;&#10;(Relational.ISNULL(CALA_PRODUIT_BANQUE_.PROD_BANQUE_ID)? Data.PRODUCT_NETWORD_BANK_ID + &quot; n'est pas trouvé dans CALA_PRODUIT_BANQUE || &quot;  : &quot;&quot; ) &#10;&#10;+(Relational.ISNULL(CALR_DEVISE_.DEVISE_ID)? Data.CURRENCY_TX + &quot;n'est pas trouvé dans CALR_DEVISE || &quot;  : &quot;&quot; ) &#10;&#13;&#10;+(Relational.ISNULL(CALA_ROD_PTF_.PROD_PTF_ID)? Data.PROD_PTF_ID + &quot;n'est pas trouvé dans CALA_PROD_PTF&quot;  : &quot;&quot; ) &#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;) : &quot;&quot; " name="Commentaire" type="id_String"/>
+      </varTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="Var.Ligne_ok " name="Out_CALA_PROD_COMPTE_" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Data.ID " name="PROD_COMPTE_ID" type="id_Long"/>
+        <mapperTableEntries expression="Data.PRODUCT_NETWORD_BANK_ID " name="PROD_BANQUE_ID" type="id_Long"/>
+        <mapperTableEntries expression="Data.CURRENCY_TX " name="DEVISE_ID" type="id_String"/>
+        <mapperTableEntries expression="Data.PROD_PTF_ID " name="PROD_PTF_ID" type="id_Long"/>
+        <mapperTableEntries expression="Data.TYPE_COMPTE_ID " name="TYPE_COMPTE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Integer.parseInt(StringHandling.RIGHT(String.valueOf(Data.ID),StringHandling.LEN(String.valueOf(Data.ID))-3 )) " name="REF_LIS" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="Data.ID " name="CLE_SK" type="id_Long"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,context.DATTRT) " name="DATE_DEBUT" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,&quot;9999-01-01&quot;) " name="DATE_FIN" type="id_Date"/>
+        <mapperTableEntries expression="1" name="FLG_ISLAST" type="id_Integer"/>
+      </outputTables>
+      <outputTables activateExpressionFilter="true" expressionFilter=" !Var.Ligne_ok" name="Out_CTRL_INTEGRITE_KO" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Var.Commentaire " name="Commentaire" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.LEFT(Var.Liste_Dim_ko  , Var.Liste_Dim_ko.lastIndexOf(&quot;;&quot;) ) " name="DIM_ERR_LIST" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="String.valueOf(Data.ID) " name="ID_ENR" nullable="true" type="id_String"/>
+      </outputTables>
+      <outputTables name="Out_Check_Del_" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Data.TYPE_COMPTE_ID " name="TYPE_COMPTE_ID" type="id_String"/>
+        <mapperTableEntries expression="Data.ID " name="PROD_COMPTE_ID_File" type="id_Long"/>
+        <mapperTableEntries expression="Data.PROD_PTF_ID " name="PROD_PTF_ID_File" type="id_Long"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="Data" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="ID" type="id_Long"/>
+        <mapperTableEntries name="PRODUCT_NETWORD_BANK_ID" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_DEATH_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_USD_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_BRUT_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_EUR_DYN_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PORTFOLIO_UC_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="CURRENCY_TX" type="id_String"/>
+        <mapperTableEntries name="List_protofolio" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PROD_PTF_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="TYPE_COMPTE_ID" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="CALA_PRODUIT_BANQUE_" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Data.PRODUCT_NETWORD_BANK_ID " name="PROD_BANQUE_ID" nullable="true" operator="=" type="id_Long"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="CALR_DEVISE_" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Data.CURRENCY_TX " name="DEVISE_ID" nullable="true" operator="=" type="id_String"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="CALA_ROD_PTF_" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Data.PROD_PTF_ID " name="PROD_PTF_ID" nullable="true" type="id_Long"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2272" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_10"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:J0LVaY9Z9IuyLPOP7zlgNXCIC6htEDddbzfdYb12"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CALA_PRODUIT_BANQUE&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT CALA_PRODUIT_BANQUE.PROD_BANQUE_ID &#10;FROM&#9; CALA_PRODUIT_BANQUE&#13;&#10;WHERE CALA_PRODUIT_BANQUE.DATE_FIN ='9999-01-01' &quot;&#13;&#10;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_BANQUE_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_10">
+      <column comment="" defaultValue="" key="false" length="12" name="PROD_BANQUE_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2528" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_11"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xqnaXj5fEVbaHgxK4OmGFgV/zXDS4BeKk363x0YE"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CALR_DEVISE&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT CALR_DEVISE.DEVISE_ID&#10;FROM&#9; CALR_DEVISE &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEVISE_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_11">
+      <column comment="" key="false" length="3" name="DEVISE_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2880" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_12"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:IKzJkXWx+SJeq+2X6QpIdERUFp7YyBQGOC5c8Vyn"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CALA_PROD_PTF&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT CALA_PROD_PTF.PROD_PTF_ID&#10;FROM&#9;CALA_PROD_PTF&#13;&#10;WHERE CALA_PROD_PTF.DATE_FIN ='9999-01-01'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_PTF_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_12">
+      <column comment="" defaultValue="" key="false" length="12" name="PROD_PTF_ID" nullable="true" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="10" offsetLabelY="-6" posX="3296" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;bdluxdev.westeurope.cloudapp.azure.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;bd_admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:EG9wmccc4Muz7tiS5nFvBG1wsK3nDvO07q0YUS7FIM/Gac525cc0CSSFdd/hMA=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CALA_PROD_COMPTE&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="REF_LIS"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_COMPTE_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_BANQUE_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEVISE_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_PTF_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_COMPTE"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_LIS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CLE_SK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_DEBUT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLG_ISLAST"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CALA_PROD_COMPTE" name="tDBOutput_5">
+      <column comment="" key="true" length="12" name="PROD_COMPTE_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="PROD_BANQUE_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="DEVISE_ID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="12" name="PROD_PTF_ID" nullable="false" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="50" name="TYPE_COMPTE" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="REF_LIS" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="CLE_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="DATE_DEBUT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DATE_FIN" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="FLG_ISLAST" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="CALA_PROD_COMPTE" name="REJECT">
+      <column comment="" key="true" length="12" name="PROD_COMPTE_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="PROD_BANQUE_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="DEVISE_ID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="12" name="PROD_PTF_ID" nullable="false" originalLength="12" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="50" name="TYPE_COMPTE" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="REF_LIS" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="CLE_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="DATE_DEBUT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DATE_FIN" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="FLG_ISLAST" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tNormalize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2816" posY="1568">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tNormalize_4"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="NORMALIZE_COLUMN" value="DIM_ERR_LIST"/>
+    <elementParameter field="TEXT" name="ITEMSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="DEDUPLICATE" value="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ESCAPE_CHAR" show="false" value="ESCAPE_MODE_DOUBLED"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DISCARD_TRAILING_EMPTY_STR" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="LignRejets"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tNormalize_4">
+      <column comment="" key="false" length="-1" name="Commentaire" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIM_ERR_LIST" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="ID_ENR" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="3104" posY="1568">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_7"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_igbo8LxHEeq34tenjnilrQ-tMap_7-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MapRejet"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CALS_REJET" name="Out_CALS_REJET_">
+      <column comment="" key="false" length="1073741823" name="COMMENTAIRE" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_FLUX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DATE_REJET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_ENR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_ODS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="TYPE_REJET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="StringHandling.INDEX(Rejets.DIM_ERR_LIST   ,&quot;:&quot;) " name="int_getTableDim" type="id_Integer"/>
+        <mapperTableEntries expression="StringHandling.LEN(Rejets.DIM_ERR_LIST ) -  Var.int_getTableDim - 1 " name="int_getIdDim" type="id_Integer"/>
+        <mapperTableEntries expression="StringHandling.RIGHT(Rejets.DIM_ERR_LIST ,Var.int_getIdDim ) " name="idDimRefPrfx" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.LEFT(Rejets.DIM_ERR_LIST ,4) " name="prefixTable" type="id_String"/>
+        <mapperTableEntries expression="&quot;333&quot;.equals(StringHandling.LEFT(Rejets.ID_ENR, 3)) " name="isFromFR" type="id_Boolean"/>
+      </varTables>
+      <outputTables name="Out_CALS_REJET_" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Rejets.Commentaire " name="COMMENTAIRE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="jobName" name="ID_FLUX" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate()" name="DATE_REJET" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Rejets.ID_ENR " name="ID_ENR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.LEFT(Rejets.DIM_ERR_LIST  ,Var.int_getTableDim ) " name="TABLE_DIM_REF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;S2_Product_network_bank_account_&quot; &#13;&#10;+ ( Var.isFromFR? &quot;FR&quot;:&quot;LU&quot;) " name="TABLE_ODS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(&quot;null&quot;.equals(StringHandling.RIGHT(Var.idDimRefPrfx  ,StringHandling.LEN( Var.idDimRefPrfx )   ))&#13;&#10; )&#13;&#10;&#13;&#10;? Var.idDimRefPrfx :&#13;&#10;&#13;&#10;StringHandling.RIGHT( Var.idDimRefPrfx  ,StringHandling.LEN( Var.idDimRefPrfx )-3) " name="ID_DIM_REF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;CALD&quot;.equals(Var.prefixTable)?&quot;D&quot; : &#13;&#10;&quot;CALR&quot;.equals(Var.prefixTable)?&quot;R&quot; :&#13;&#10;&quot;A&quot; " name="TYPE_REJET" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="Rejets" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Commentaire" type="id_String"/>
+        <mapperTableEntries name="DIM_ERR_LIST" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ID_ENR" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="3456" posY="1568">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_6"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;bdluxdev.westeurope.cloudapp.azure.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;bd_admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:n/Af1S44J5QNH8v86IKShJ2sxiwxSxHoxRwAtlsu0hkhj4gLnk7mFQZdU6Xg5Q=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CALS_REJET&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="COMMENTAIRE"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMMENTAIRE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_FLUX"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_REJET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_ENR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TABLE_DIM_REF"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TABLE_ODS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_DIM_REF"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_REJET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CALS_REJET" name="tDBOutput_6">
+      <column comment="" key="false" length="1073741823" name="COMMENTAIRE" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_FLUX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DATE_REJET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_ENR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_ODS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="TYPE_REJET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="CALS_REJET" name="REJECT">
+      <column comment="" key="false" length="1073741823" name="COMMENTAIRE" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_FLUX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DATE_REJET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_ENR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="TABLE_ODS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="256" name="ID_DIM_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="TYPE_REJET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3168" posY="1408">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="context.RepTemp+&quot;/CALD_ADR_BANCAIRE_DC_NOTNULL_rg_supp_log.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.RepTemp+&quot;/cala_prod_compte_rg_supp_log.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;CALA_PROD_COMPTE_RG_SUPP_LOG&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column comment="" key="false" length="-1" name="TYPE_COMPTE_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PROD_COMPTE_ID_File" nullable="false" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PROD_PTF_ID_File" nullable="false" originalLength="12" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="2112">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Post-job&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="2112">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Fin du job &quot;+jobName"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Fin du job&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_2"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="-320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_tOPNkJ_6EeqSraa07gtYMw"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.BDD_DWH_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.BDD_DWH_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.BDD_DWH_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.BDD_DWH_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.BDD_DWH_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8bbzSIrwwUkNu+7tFCpF4UF1FeT6M2s069HKvCzewBhhYCq2RvgHDCBC1M6idWsgMtvVCw=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.BDD_DWH_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="context.BDD_DWH_SharedName"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Ouverture connection DWH&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="-160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;La connexion au DWH a échoué&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Erreur dans la connection à la DB&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-960" posY="1920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.RepTemp+&quot;/cala_prod_compte_rg_supp_log.csv&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Talend/7.2.1/studio/workspace/delete_folder&quot;"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="&quot;C:/Talend/7.2.1/studio/workspace/delete_folder or delete_file&quot;"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exist or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;CALA_PROD_COMPTE_RG_SUPP_LOG&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_1"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="1920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;bdluxdev.westeurope.cloudapp.azure.com&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;bd_admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MUsbKMXFvCCv/7bLbZTtxvMXnI89vXILQrT+2rc0UH1bTzJu4ruUbEmN8L6TVQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CALA_PROD_COMPTE&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT CALA_PROD_COMPTE.PROD_COMPTE_ID,&#10;&#9;&#9;CALA_PROD_COMPTE.PROD_PTF_ID,&#13;&#10;        CALA_PROD_COMPTE.TYPE_COMPTE,&#10;&#9;&#9;CALA_PROD_COMPTE.CLE_SK&#10;FROM&#9;CALA_PROD_COMPTE&#13;&#10;WHERE CALA_PROD_COMPTE.DATE_FIN = '9999-01-01' &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_COMPTE_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_PTF_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_COMPTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CLE_SK"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_3">
+      <column comment="" defaultValue="" key="false" length="-1" name="PROD_COMPTE_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PROD_PTF_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TYPE_COMPTE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CLE_SK" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-128" posY="1728">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.RepTemp+&quot;/cala_prod_compte_rg_supp_log.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Talend/TOS_DI-20190620_1446-V7.2.1/TOS_DI-20190620_1446-V7.2.1/workspace&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_COMPTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_COMPTE_ID_File"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_PTF_ID_File"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_COMPTE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_COMPTE_ID_File"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_PTF_ID_File"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;CALA_PROD_COMPTE_RG_SUPP_LOG&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="-1" name="TYPE_COMPTE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PROD_COMPTE_ID_File" nullable="false" originalLength="12" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PROD_PTF_ID_File" nullable="false" originalLength="10" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="TYPE_COMPTE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="PROD_COMPTE_ID_File" nullable="false" originalLength="12" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PROD_PTF_ID_File" nullable="false" originalLength="10" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="-128" posY="1920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_igbo8LxHEeq34tenjnilrQ-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="DetecDel"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CALR_PAYS" name="Out_CALA_PROD_COMPTE_DEL">
+      <column comment="" key="true" length="-1" name="TYPE_COMPTE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="PROD_COMPTE_ID" nullable="false" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="true" length="12" name="PROD_PTF_ID" nullable="false" originalLength="10" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATE_FIN" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateCondensedTool="true" name="Out_CALA_PROD_COMPTE_DEL" rejectInnerJoin="true" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="In_CALA_PROD_COMPTE.TYPE_COMPTE " name="TYPE_COMPTE" type="id_String"/>
+        <mapperTableEntries expression=" In_CALA_PROD_COMPTE.PROD_COMPTE_ID " name="PROD_COMPTE_ID" type="id_Long"/>
+        <mapperTableEntries expression="In_CALA_PROD_COMPTE.PROD_PTF_ID " name="PROD_PTF_ID" type="id_Long"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,context.DATTRT) " name="DATE_FIN" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="In_CALA_PROD_COMPTE" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="PROD_COMPTE_ID" type="id_Long"/>
+        <mapperTableEntries name="PROD_PTF_ID" type="id_Long"/>
+        <mapperTableEntries name="TYPE_COMPTE" type="id_String"/>
+        <mapperTableEntries name="CLE_SK" type="id_Long"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="Lkp_GetSuppID" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="In_CALA_PROD_COMPTE.TYPE_COMPTE " name="TYPE_COMPTE" operator="=" type="id_String"/>
+        <mapperTableEntries expression="In_CALA_PROD_COMPTE.PROD_COMPTE_ID " name="PROD_COMPTE_ID_File" operator="=" type="id_Long"/>
+        <mapperTableEntries expression="In_CALA_PROD_COMPTE.PROD_PTF_ID " name="PROD_PTF_ID_File" operator="=" type="id_Long"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;bdluxdev.westeurope.cloudapp.azure.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;bd_admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ME7wOLjD4oebFBouXYX3MMpiderTconWzVe3ipqz57eeaO3nz2jfVu95LcrcQA=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CALA_PROD_COMPTE&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="PROD_PTF_ID"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_COMPTE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_COMPTE_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_PTF_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CALR_PAYS" name="tDBOutput_3">
+      <column comment="" key="true" length="-1" name="TYPE_COMPTE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="PROD_COMPTE_ID" nullable="false" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="true" length="12" name="PROD_PTF_ID" nullable="false" originalLength="10" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATE_FIN" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="CALR_PAYS" name="REJECT">
+      <column comment="" key="true" length="-1" name="TYPE_COMPTE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="PROD_COMPTE_ID" nullable="false" originalLength="12" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="true" length="12" name="PROD_PTF_ID" nullable="false" originalLength="10" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATE_FIN" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tWarn_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_1" offsetLabelX="0" offsetLabelY="0" source="tWarn_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
+  </connection>
+  <connection connectorName="FLOW" label="In_S2_Product_network_bank_account_FR" lineStyle="10" mergeOrder="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="In_S2_Product_network_bank_account_FR"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="In_S2_Product_network_bank_account_LU" lineStyle="10" mergeOrder="2" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="In_S2_Product_network_bank_account_LU"/>
+  </connection>
+  <connection connectorName="FLOW" label="SRC_ODS" lineStyle="0" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="SRC_ODS"/>
+  </connection>
+  <connection connectorName="FLOW" label="S2_Product_network_bank_account" lineStyle="0" metaname="S2_Product_network_bank_account" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tNormalize_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="S2_Product_network_bank_account"/>
+  </connection>
+  <connection connectorName="FLOW" label="Out_Rejets_Qualite" lineStyle="0" metaname="Out_Rejets_Qualite" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="COMMENTAIRE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Out_Rejets_Qualite"/>
+  </connection>
+  <connection connectorName="FLOW" label="LignesTransformees" lineStyle="0" metaname="tNormalize_2" offsetLabelX="0" offsetLabelY="0" source="tNormalize_2" target="tMap_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="PORTFOLIO_EUR_DYN_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PORTFOLIO_DEATH_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PORTFOLIO_UC_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="List_protofolio"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PORTFOLIO_EUR_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PORTFOLIO_EUR_BRUT_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_NETWORD_BANK_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CURRENCY_TX"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PORTFOLIO_USD_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="LignesTransformees"/>
+  </connection>
+  <connection connectorName="FLOW" label="LignesOK" lineStyle="0" metaname="LignesOK" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tMap_8">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="LignesOK"/>
+  </connection>
+  <connection connectorName="FLOW" label="Data" lineStyle="0" metaname="Data" offsetLabelX="0" offsetLabelY="0" source="tMap_8" target="tMap_9">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Data"/>
+  </connection>
+  <connection connectorName="FLOW" label="Out_CALA_PROD_COMPTE_" lineStyle="0" metaname="Out_CALA_PROD_COMPTE_" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_9" target="tDBOutput_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Out_CALA_PROD_COMPTE_"/>
+  </connection>
+  <connection connectorName="FLOW" label="Out_CTRL_INTEGRITE_KO" lineStyle="0" metaname="Out_CTRL_INTEGRITE_KO" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_9" target="tNormalize_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Out_CTRL_INTEGRITE_KO"/>
+  </connection>
+  <connection connectorName="FLOW" label="Out_Check_Del_" lineStyle="0" metaname="Out_Check_Del_" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_9" target="tFileOutputDelimited_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="TYPE_COMPTE_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Out_Check_Del_"/>
+  </connection>
+  <connection connectorName="FLOW" label="CALA_PRODUIT_BANQUE_" lineStyle="8" metaname="tDBInput_10" offsetLabelX="0" offsetLabelY="0" source="tDBInput_10" target="tMap_9">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CALA_PRODUIT_BANQUE_"/>
+  </connection>
+  <connection connectorName="FLOW" label="CALR_DEVISE_" lineStyle="8" metaname="tDBInput_11" offsetLabelX="0" offsetLabelY="0" source="tDBInput_11" target="tMap_9">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CALR_DEVISE_"/>
+  </connection>
+  <connection connectorName="FLOW" label="CALA_ROD_PTF_" lineStyle="8" metaname="tDBInput_12" offsetLabelX="0" offsetLabelY="0" source="tDBInput_12" target="tMap_9">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CALA_ROD_PTF_"/>
+  </connection>
+  <connection connectorName="FLOW" label="Rejets" lineStyle="0" metaname="tNormalize_4" offsetLabelX="0" offsetLabelY="0" source="tNormalize_4" target="tMap_7">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="QD_ID_ENR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QD_ERR_LIST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Rejets"/>
+  </connection>
+  <connection connectorName="FLOW" label="Out_CALS_REJET_" lineStyle="0" metaname="Out_CALS_REJET_" offsetLabelX="0" offsetLabelY="0" source="tMap_7" target="tDBOutput_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="COMMENTAIRE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BI_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Out_CALS_REJET_"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tWarn_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDie_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError2"/>
+  </connection>
+  <connection connectorName="FLOW" label="In_CALA_PROD_COMPTE" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_4">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="In_CALA_PROD_COMPTE"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tFileDelete_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="FLOW" label="Lkp_GetSuppID" lineStyle="8" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_4">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" show="false" value="false"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="PROD_COMPTE_ID_File"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYPE_COMPTE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Lkp_GetSuppID"/>
+  </connection>
+  <connection connectorName="FLOW" label="Out_CALA_PROD_COMPTE_DEL" lineStyle="0" metaname="Out_CALA_PROD_COMPTE_DEL" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tDBOutput_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="PROD_PTF_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROD_COMPTE_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROD_COMPTE_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROD_PTF_ID_File"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYPE_COMPTE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Out_CALA_PROD_COMPTE_DEL"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Suppression"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1976730d-ab0e-4ade-b3b3-ff4e20b81579"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>P6+nKIj3snriAggOGKDq3tAQFDkMxUK+DwyGba85dDDV2tT1sMRCAPBkqPUXJ4wJyOxuCHJAQ6Py&#13;
+FdkZZxC9AQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_63bc25f2-5efa-4155-948a-0822e916ce20"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vep6c/0tXffH74NY3e3CYInHJBmWu9nhkv1EgbBQfcC1qR60uv2Vkbq9G2T6nJwc0uOpU7nbMQHv&#13;
++G+KdQNKkQ==</DigestValue></Reference></SignedInfo><SignatureValue>TpsVY4hRwCgY/BIyxkcba95uhH9mXslWv072Hdyr87Zs1T+VRP9n2Mtki+kLW7KVsCReIl90QlUu&#13;
+KcIZX5jBzTx4Ou6IWyAAWFoXv21Tj+AyRBjFdJ/L4lap5ixWFViUhsz6ir+D9jOKoSY7Yagjp5yO&#13;
+wQ1E7ac7t7fXZ0wy8Pg+QeYxUAYbacwc+HgXUtmBVcw5XBLNb2J+Q2GYqIOMkUIyiAwGcBo6MZsG&#13;
+2BTnWK10n3NALZVpJdywxmXLZYKdw2eg0W21fgI7fBPY2xWXzOmKMDheFIleiu5+v30gMN8DcKWO&#13;
+4cV+2h6jj5KgyPy8Bk2EPKy0xTH+yJE2x+lRbA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_63bc25f2-5efa-4155-948a-0822e916ce20" Target="#_1976730d-ab0e-4ade-b3b3-ff4e20b81579"><Timestamp>2022-10-26 19:34:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

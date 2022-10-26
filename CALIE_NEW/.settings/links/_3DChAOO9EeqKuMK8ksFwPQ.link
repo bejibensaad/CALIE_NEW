@@ -1,0 +1,54 @@
+{
+  "itemId" : "_3DChAOO9EeqKuMK8ksFwPQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_nrUhoKr9EequWIUYTAkqNA",
+    "parameterList" : [ {
+      "id" : "_9jAFRL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_AdditionalParams"
+    }, {
+      "id" : "_9jAFQ701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Database"
+    }, {
+      "id" : "_9jAFQr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Login"
+    }, {
+      "id" : "_9jAFSL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Password"
+    }, {
+      "id" : "_9jAFR701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Port"
+    }, {
+      "id" : "_9jAFRb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Schema"
+    }, {
+      "id" : "_9jAFRr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_HK3OMGzjEeqbNMFDxhb_RQ",
+    "parameterList" : [ {
+      "id" : "_9k6w1L01Eeqw6dGOGVrE3Q",
+      "name" : "DATTRT"
+    }, {
+      "id" : "_9k6w0b01Eeqw6dGOGVrE3Q",
+      "name" : "FichierContexte"
+    }, {
+      "id" : "_vTgoMOecEeqsq7vj5DJi5A",
+      "name" : "FichierContexteDateCDG"
+    }, {
+      "id" : "_vTgoMeecEeqsq7vj5DJi5A",
+      "name" : "RepCDG"
+    }, {
+      "id" : "_9k6w0701Eeqw6dGOGVrE3Q",
+      "name" : "RepReject"
+    }, {
+      "id" : "_9k6w0r01Eeqw6dGOGVrE3Q",
+      "name" : "RepSource"
+    }, {
+      "id" : "_9k6w1b01Eeqw6dGOGVrE3Q",
+      "name" : "RepTemp"
+    } ]
+  } ]
+}

@@ -1,0 +1,104 @@
+{
+  "itemId" : "_nxy8sHT9Eeq6FLoICx4AbQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_P50YkF7QEeqvGojwLoyxUg",
+    "parameterList" : [ {
+      "id" : "_9jzWhb01Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Server"
+    }, {
+      "id" : "_9jzWg701Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Port"
+    }, {
+      "id" : "_9jzWhr01Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Login"
+    }, {
+      "id" : "_9jzWgr01Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Schema"
+    }, {
+      "id" : "_9jzWh701Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Password"
+    }, {
+      "id" : "_9jzWgb01Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_AdditionalParams"
+    }, {
+      "id" : "_9jzWhL01Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Database"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_nrUhoKr9EequWIUYTAkqNA",
+    "parameterList" : [ {
+      "id" : "_9jAFRr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Server"
+    }, {
+      "id" : "_9jAFQ701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Database"
+    }, {
+      "id" : "_9jAFR701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Port"
+    }, {
+      "id" : "_9jAFSL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Password"
+    }, {
+      "id" : "_9jAFQr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Login"
+    }, {
+      "id" : "_9jAFRL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_AdditionalParams"
+    }, {
+      "id" : "_9jAFRb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Schema"
+    } ]
+  }, {
+    "contextName" : "informix",
+    "repoId" : "_P50YkF7QEeqvGojwLoyxUg",
+    "parameterList" : [ {
+      "id" : "_9jzWhb01Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Server"
+    }, {
+      "id" : "_9jzWg701Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Port"
+    }, {
+      "id" : "_9jzWhr01Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Login"
+    }, {
+      "id" : "_9jzWgr01Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Schema"
+    }, {
+      "id" : "_9jzWh701Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Password"
+    }, {
+      "id" : "_9jzWgb01Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_AdditionalParams"
+    }, {
+      "id" : "_9jzWhL01Eeqw6dGOGVrE3Q",
+      "name" : "DWH_localhost_Database"
+    } ]
+  }, {
+    "contextName" : "informix",
+    "repoId" : "_nrUhoKr9EequWIUYTAkqNA",
+    "parameterList" : [ {
+      "id" : "_9jAFRr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Server"
+    }, {
+      "id" : "_9jAFQ701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Database"
+    }, {
+      "id" : "_9jAFR701Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Port"
+    }, {
+      "id" : "_9jAFSL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Password"
+    }, {
+      "id" : "_9jAFQr01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Login"
+    }, {
+      "id" : "_9jAFRL01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_AdditionalParams"
+    }, {
+      "id" : "_9jAFRb01Eeqw6dGOGVrE3Q",
+      "name" : "BDD_AMC_Schema"
+    } ]
+  } ]
+}
