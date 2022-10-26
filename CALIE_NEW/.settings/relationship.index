@@ -6388,37 +6388,6 @@
   } ]
 }, {
   "baseItem" : {
-    "id" : "_QKNNUGZ8EeWm5YvsrIoYzQ",
-    "version" : "0.1",
-    "type" : "job"
-  },
-  "relatedItems" : [ {
-    "id" : "DQTechnical",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "DataQuality",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "DemoRoutines",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "DqStringHandling",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "GetRandomPhoneNum",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "MDM",
-    "version" : "Latest",
-    "type" : "routine"
-  } ]
-}, {
-  "baseItem" : {
     "id" : "_QZWlsJwEEeqpSZj-SHDYTA",
     "version" : "0.1",
     "type" : "job"
@@ -9470,89 +9439,6 @@
     "type" : "routine"
   }, {
     "id" : "MDM",
-    "version" : "Latest",
-    "type" : "routine"
-  } ]
-}, {
-  "baseItem" : {
-    "id" : "_quBCoOkvEeqQr5Yq3surmQ",
-    "version" : "0.1",
-    "type" : "job"
-  },
-  "relatedItems" : [ {
-    "id" : "_HK3OMGzjEeqbNMFDxhb_RQ",
-    "version" : "Latest",
-    "type" : "context"
-  }, {
-    "id" : "_n1ezUKZUEeqjJYrLnR_VOg",
-    "version" : "Latest",
-    "type" : "context"
-  }, {
-    "id" : "_nrUhoKr9EequWIUYTAkqNA",
-    "version" : "Latest",
-    "type" : "context"
-  }, {
-    "id" : "_xYe_8Kr8EequWIUYTAkqNA",
-    "version" : "Latest",
-    "type" : "context"
-  }, {
-    "id" : "CALIE_TALEND_DW:_3DChAOO9EeqKuMK8ksFwPQ",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
-    "id" : "CALIE_TALEND_DW:_5l_HcJqWEeqpSZj-SHDYTA",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
-    "id" : "CALIE_TALEND_DW:_B9lioOXlEeqOOOC5EnNrsA",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
-    "id" : "CALIE_TALEND_DW:_DsRkUOO8EeqKuMK8ksFwPQ",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
-    "id" : "CALIE_TALEND_DW:_LWgfYLVJEeqKUp9y8_Bk9A",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
-    "id" : "CALIE_TALEND_DW:_P67xALVCEeqKUp9y8_Bk9A",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
-    "id" : "CALIE_TALEND_DW:_jmKw4OXnEeqOOOC5EnNrsA",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
-    "id" : "_7ovHMKDJEeq3DsVNR_ERTQ",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_M_hrgJ5nEeq7rfGu8SgD0w",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_tOPNkJ_6EeqSraa07gtYMw",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "DQTechnical",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "DataMasking",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "DataQuality",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "DataQualityDependencies",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "DqStringHandling",
     "version" : "Latest",
     "type" : "routine"
   } ]
